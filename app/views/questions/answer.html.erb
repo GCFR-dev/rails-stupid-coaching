@@ -1,4 +1,12 @@
-<p>Your question: <%= @question %></p>
-<p>Coach: <%= @answer %></p>
-
-<%= link_to "Ask another question", ask_path %>
+<div class="container mt-5" style="max-width: 600px;">
+  <h1 class="mb-4">Stupid Coaching</h1>
+  <div class="card mb-4">
+    <div class="card-body">
+      <p class="text-muted mb-1">Your question</p>
+      <p class="fs-5"><%= @question %></p>
+      <p class="text-muted mb-1">Coach</p>
+      <p class="fs-5 fw-bold"><%= @answer %></p>
+    </div>
+  </div>
+  <%= link_to "Ask another question", ask_path, class: "btn btn-outline-primary" %>
+</div>
